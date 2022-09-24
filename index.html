@@ -6,28 +6,28 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="googlebot" content="noindex, nofollow">
 
-  
-  
 
-  
-  
-  
 
-  
+
+
+
+
+
+
 
   <script type="text/javascript" src="/js/lib/dummy.js"></script>
 
-  
 
-  
 
-  
 
-  
+
+
+
+
     <link rel="stylesheet" type="text/css" href="/css/result-light.css">
-  
 
-  
+
+
 
   <style type="text/css">
     body {
@@ -73,8 +73,8 @@ div.main {
 
   <title>GD Relic Recipes</title>
 
-  
-    
+
+
 
 
 
@@ -408,12 +408,12 @@ function main() {
   componentsList["Inferno"] = {
     type: "relic",
     cost: 15000,
-    components: ["Blood of Ch'thon", "Enchanted Flint", "Radiant Gem", "Molten Skin"]
+    components: ["Blood of Ch'thon", "Searing Ember", "Rigid Shell", "Scavenged Plating"]
   };
   componentsList["Mistborn Talisman"] = {
     type: "relic",
     cost: 15000,
-    components: ["Troll Bonecrusher", "Severed Claw", "Vitriolic Gallstone", "Roiling Blood"]
+    components: ["Troll Bonecrusher", "Chipped Claw", "Scavenged Plating", "Roiling Blood"]
   };
   componentsList["Rampage"] = {
     type: "relic",
@@ -433,7 +433,7 @@ function main() {
   componentsList["Squall"] = {
     type: "relic",
     cost: 15000,
-    components: ["Ancient Heart", "Amber", "Radiant Gem", "Rigid Shell"]
+    components: ["Ancient Heart", "Cracked Lodestone", "Dense Fur", "Scavenged Plating"]
   };
 
 	//Rare Relics
@@ -480,12 +480,22 @@ function main() {
   componentsList["Terror"] = {
     type: "relic",
     cost: 37500,
-    components: ["Blood of Ch'thon", "Blood of Ch'thon", "Mistborn Talisman", "Calamity", "Glacier", "Haunted Steel", "Void-Touched Ammo", "Consecrated Wrappings"]
+    components: ["Blood of Ch'thon", "Blood of Ch'thon", "Mistborn Talisman", "Calamity", "Glacier", "Bloody Whetstone", "Void-Touched Ammo", "Consecrated Wrappings"]
   };
   componentsList["Torment"] = {
     type: "relic",
     cost: 37500,
     components: ["Blood of Ch'thon", "Blood of Ch'thon", "Corruption", "Squall", "Guile", "Kilrian's Shattered Soul", "Consecrated Wrappings", "Black Tallow"]
+  };
+  componentsList["Glacier"] = {
+    type: "relic",
+    cost: 37500,
+    components: ["Ancient Heart", "Chilled Steel", "Molten Skin", "Frozen Heart"]
+  };
+  componentsList["Fortitude"] = {
+    type: "relic",
+    cost: 37500,
+    components: ["Tainted Brain Matter", "Bristly Fur", "Resilient Plating", "Frozen Heart"]
   };
 
 //Epic Relics
@@ -641,6 +651,12 @@ function main() {
     cost: 105000,
     components: ["Blood of Ch'thon", "Blood of Ch'thon", "Blood of Ch'thon", "Desolation", "Slaughter", "Inferno", "Flintcore Bolts", "Focusing Prism"]
   };
+  componentsList["Bane"] = {
+    type: "relic",
+    cost: 105000,
+    components: ["Blood of Ch'thon", "Blood of Ch'thon", "Blood of Ch'thon", "Conflagration", "Eye of the Storm", "Fortitude", "Glacier"]
+  };
+  //add eye of the storm
 
   function getRelicComponents(relicName) { //Takes a name of a relic and returns quantities and objects of all base components, plus cost for crafting
   	totalCost += componentsList[relicName].cost; //Adds crafting cost of the current relic
@@ -716,17 +732,18 @@ function main() {
   }
 }
 
-//]]> 
+//]]>
 
 </script>
 
-  
+
 </head>
 
 <body>
   <div class="main">
   <span class="cost list">
-    Grim Dawn Relic Tool by KoomZog (c)2016
+    Grim Dawn Relic Tool by KoomZog (c)2016 
+    Updated by ilthraim 2022
   </span><br>
   <br>
   <select id="input">
@@ -787,6 +804,7 @@ function main() {
     <option>Scourge</option>
     <option>Solael's Decimation</option>
     <option>Ulzuin's Pyroclasm</option>
+    <option>Bane</option>
   </select>
   <input type="submit" id="convertButton" value="List components" onclick="main()" />
   <br><br>
@@ -795,8 +813,7 @@ function main() {
 <div class="list">
 <br><br>
 </div>
-  
+
 </body>
 
 </html>
-
