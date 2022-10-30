@@ -497,6 +497,22 @@ function main() {
     cost: 37500,
     components: ["Tainted Brain Matter", "Bristly Fur", "Resilient Plating", "Frozen Heart"]
   };
+  componentsList["Vendetta"] = {
+    type: "relic",
+    cost: 37500,
+    components: ["Blood of Ch'thon", "Calamity", "Fortitude", "Gunslinger's Talisman", "Attuned Lodestone", "Deathchill Bolts", "Purified Salt"]
+  };
+  componentsList["Fervor"] = {
+    type: "relic",
+    cost: 37500,
+    components: ["Blood of Ch'thon", "Cracked Lodestone", "Scavenged Plating", "Bristly Fur"]
+  };
+  componentsList["Hysteria"] = {
+    type: "relic",
+    cost: 37500,
+    components: ["Blood of Ch'thon", "Battered Shell", "Scavenged Plating", "Ectoplasm"]
+  };
+
 
 //Epic Relics
   componentsList["Ancestor"] = {
@@ -656,6 +672,11 @@ function main() {
     cost: 105000,
     components: ["Blood of Ch'thon", "Blood of Ch'thon", "Blood of Ch'thon", "Conflagration", "Eye of the Storm", "Fortitude", "Glacier"]
   };
+  componentsList["Deathstalker"] = {
+    type: "relic",
+    cost: 225000,
+    components: ["Manticore Eye", "Manticore Eye", "Manticore Eye", "Manticore Eye", "Manticore Eye", "Manticore Eye", "Manticore Eye", "Manticore Eye", "Vendetta", "Savage", "Fervor", "Hysteria"]
+  };
   //add eye of the storm
 
   function getRelicComponents(relicName) { //Takes a name of a relic and returns quantities and objects of all base components, plus cost for crafting
@@ -780,6 +801,8 @@ function main() {
     <option>Terror</option>
     <option>Torment</option>
     <option>Zeal</option>
+    <option>Vendetta</option>
+    <option>Fervor</option>
     <option>-- Mythical Relics --</option>
     <option>Aegis</option>
     <option>Agrivix's Malice</option>
@@ -805,6 +828,7 @@ function main() {
     <option>Solael's Decimation</option>
     <option>Ulzuin's Pyroclasm</option>
     <option>Bane</option>
+    <option>Deathstalker</option>
   </select>
   <input type="submit" id="convertButton" value="List components" onclick="main()" />
   <br><br>
